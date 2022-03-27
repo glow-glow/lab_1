@@ -6,14 +6,14 @@ class EStackExcept
 {
    private: char *_mes;//сообщения
    public:
-    EStackExcept(const char *mes)// Консруктор
+    EStackExcept(const char *mes)//консруктор
     {
-        mes=new char[strlen(mes)+1];//выделения памяти
+        mes=new char[strlen(mes)+1];//выделяем память
         strcpy(_mes,mes);
     }
-    EStackExcept(const EStackExcept &obj)//копирования
+    EStackExcept(const EStackExcept &obj)//копируем
     {
-        _mes=new char[strlen(obj._mes)+1];//Веделения памяти
+        _mes=new char[strlen(obj._mes)+1];//выделяем память
          strcpy(_mes,obj._mes);
 
     }
